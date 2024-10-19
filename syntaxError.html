@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('C:/Users/devme/AppData/Local/Temp/MicrosoftEdgeDownloads/36a648bf-469b-4fb1-9139-d8091fc57cbc/Untitled design.jpg');
+            background-size: cover;  /* Ensures the image covers the entire background */
+            background-position: center;  /* Centers the background image */
+            background-repeat: no-repeat;  /* Prevents the image from repeating */
+            background-attachment: fixed; 
+        }
+
+        /* Navbar styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 10px 20px;
+            font-family: "Cinzel", serif;
+        }
+
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2vw; /* Responsive text size */
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #e63946;
+        }
+
+        .menu-icon, .cart-icon {
+            color: #fff;
+            font-size: 2vw; /* Responsive icon size */
+            cursor: pointer;
+        }
+
+        .menu-icon:hover, .cart-icon:hover {
+            color: #e63946;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 60px);
+            text-align: center;
+        }
+
+        /* Responsive text size using vw (viewport width) */
+        .F {
+            font-family: "La Belle Aurore", cursive;
+            font-weight: 400;
+            font-size: 20vw;
+            font-style: normal;
+        }
+
+        h1 span {
+            font-family: "Fredericka the Great", serif;
+            font-weight: 400;
+            font-size: 15vw;
+            font-style: normal;
+        }
+
+        p.caption {
+            font-family: 'Allura', cursive;
+            font-size: 5vw;
+            color: #555;
+            margin-top: -2vw;
+        }
+
+        /* Decorative elements with percentage-based positioning for responsiveness */
+        .decorative-left {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            height: 200px;
+            opacity: 0.5;
+        }
+
+        .decorative-right {
+            position: absolute;
+            top: 50%;
+            right: 10%;
+            transform: translateY(-50%);
+            height: 200px;
+            opacity: 0.5;
+        }
+
+        /* Media Queries for smaller devices */
+        @media (max-width: 768px) {
+            .navbar a {
+                font-size: 4vw; /* Adjusted for smaller screens */
+            }
+
+            .menu-icon, .cart-icon {
+                font-size: 5vw;
+            }
+
+            .F {
+                font-size: 35vw;
+            }
+
+            h1 span {
+                font-size: 20vw;
+            }
+
+            p.caption {
+                font-size: 6vw;
+            }
+
+            .navbar {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .F {
+                font-size: 45vw;
+            }
+
+            h1 span {
+                font-size: 25vw;
+            }
+
+            p.caption {
+                font-size: 8vw;
+            }
+
+            .navbar a {
+                font-size: 6vw;
+            }
+
+            .menu-icon, .cart-icon {
+                font-size: 8vw;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="menu-icon"><i class="fas fa-bars"></i></div>
+        <a href="syntaxError.html">Home</a>
+        <a href="home.html">About</a>
+        <a href="menu.html">Services</a>
+        <a href="#contact">Contact Us</a>
+        <div class="cart-icon"><i class="fas fa-shopping-cart"></i></div>
+    </nav>
+
+    <div class="container">
+        <h1><span class="F">F</span><span>lorist</span></h1>
+        <p class="caption">Blossom & Bloom</p> <!-- Caption class for styling -->
+    </div>
+
+</body>
+</html>

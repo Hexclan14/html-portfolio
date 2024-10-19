@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Florist - Fragrance brand inspired by nature's finest florals. Discover luxury perfumes, candles, and personal care products.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <title>Florist - About Us</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('C:/Users/devme/AppData/Local/Temp/MicrosoftEdgeDownloads/fbf7501d-459b-42c4-93a9-ca08e0f922b2/Untitled design.jpg');
+    background-size: cover;  /* Ensures the image covers the entire background */
+    background-position: center;  /* Centers the background image */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    background-attachment: fixed;
+    padding-top: 80px; /* Shift the content lower */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    font-family: "Cinzel", serif;
+    position: fixed;
+    width: 98%;
+    top: 0;
+}
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #2d2d2d;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        h2 {
+            
+            font-size: 4em;
+            margin-bottom: 10px;
+            font-family: "Cinzel", serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+        }
+        p {
+            margin: 10px 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .offerings ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .offerings li {
+/*            background-color: #fff;*/
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+/*            box-shadow: 0 4px 8px rgba(0,0,0,0.1);*/
+        }
+        footer {
+    background-color: black; /* Same color as the navbar */
+    color: white;
+    text-align: center;
+    padding: 20px 10px;  /* Increased padding to move text down */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2vw; /* Responsive text size */
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #e63946;
+        }
+                .menu-icon, .cart-icon {
+            color: #fff;
+            font-size: 2vw; /* Responsive icon size */
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .navbar a {
+                font-size: 4vw; /* Adjusted for smaller screens */
+            }
+
+            .menu-icon, .cart-icon {
+                font-size: 5vw;
+            }
+
+            .F {
+                font-size: 35vw;
+            }
+
+            h1 span {
+                font-size: 20vw;
+            }
+
+            p.caption {
+                font-size: 6vw;
+            }
+
+            .navbar {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .F {
+                font-size: 45vw;
+            }
+
+            h1 span {
+                font-size: 25vw;
+            }
+
+            p.caption {
+                font-size: 8vw;
+            }
+
+            .navbar a {
+                font-size: 6vw;
+            }
+
+            .menu-icon, .cart-icon {
+                font-size: 8vw;
+            }
+        }
+        .florist{
+            display: inline;
+        }
+        .F{
+            font-family: "La Belle Aurore", cursive;
+
+        }
+        .rest{
+            font-family: "Fredericka the Great", serif;
+        }
+    </style>
+</head>
+<body>
+    
+     <nav class="navbar">
+        <div class="menu-icon"><a href="menu.html"><i class="fas fa-bars" ></i></a></div>
+        <a href="syntaxError.html">Home</a>
+        <a href="home.html">About</a>
+        <a href="menu.html">Services</a>
+        <a href="#contact">Contact Us</a>
+        <div class="cart-icon"><i class="fas fa-shopping-cart"></i></div>
+    </nav>
+    <div class="content">
+        <section>
+            <div class = "florist">
+            <h2>About <span class = "F">F</span><span class = "rest">lorist</span></h2>
+        
+            <p>
+                At <strong><span class = "F">F</span><span class = "rest">lorist</span></strong> , we believe that fragrance is more than just a scent—it's an expression of identity, a memory in the making, and a moment of luxury. Born from a deep appreciation of nature’s most enchanting florals, we craft sophisticated fragrances that bring the essence of a blooming garden into everyday life.
+            </p>
+        </div>
+
+        </section>
+
+        <section>
+            <h2>Our Story</h2>
+            <p>
+                Florist began with a simple desire: to capture the purity and elegance of fresh flowers in a bottle. Inspired by the timeless allure of blossoms, our founders combined their passion for perfumery and their love for nature to create a fragrance house rooted in authenticity and artistry. Each scent is a celebration of nature's beauty, carefully blended using the finest ingredients to evoke emotion, inspire confidence, and uplift the senses.
+            </p>
+        </section>
+
+        <section>
+            <h2>Our Philosophy</h2>
+            <p>
+                We embrace the harmony between nature and luxury. Our perfumes are thoughtfully crafted to offer a sensory experience that is both refined and intimate. Whether it's the delicate petals of jasmine, the seductive warmth of rose, or the crisp freshness of citrus, every note in our fragrances tells a story of its own.
+            </p>
+            <p>
+                At Florist, sustainability and quality are at the heart of everything we do. We are committed to using ethically sourced ingredients, eco-friendly packaging, and cruelty-free practices, ensuring that our perfumes not only smell exquisite but are kind to the earth.
+            </p>
+        </section>
+
+        <section class="offerings">
+            <h2>What We Offer</h2>
+            <ul>
+                <li><strong>Eau de Parfum:</strong> Luxurious, long-lasting scents that envelop you in floral sophistication.</li>
+                <li><strong>Candles & Home Fragrance:</strong> Extend the magic of Florist into your living space with our premium candles and diffusers.</li>
+                <li><strong>Personal Care:</strong> Pamper yourself with our fragrant body lotions and shower gels, designed to hydrate and indulge your skin.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Our Promise</h2>
+            <p>
+                Florist is dedicated to delivering an unforgettable olfactory experience with every product. We invite you to explore our world, where every fragrance is a masterpiece, and every spritz transports you to a blooming garden filled with nature's finest florals.
+            </p>
+            <p><em>Discover the beauty of flowers in a bottle with Florist—where every scent tells a story.</em></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Florist. All rights reserved.</p>
+    </footer>
+</body>
+</html>  
