@@ -16,14 +16,13 @@
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background-image: url('C:/Users/devme/AppData/Local/Temp/MicrosoftEdgeDownloads/44609a45-1ea6-423b-a0a0-1d84a8d288d3/e.jpg');
-            background-size: cover;  /* Ensures the image covers the entire background */
-            background-position: center;  /* Centers the background image */
-            background-repeat: no-repeat;  /* Prevents the image from repeating */
-            background-attachment: fixed; 
+            background-image: url('C:/Users/devme/Music/e.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
-        /* Navbar styles */
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -37,7 +36,7 @@
             margin: 0 15px;
             text-decoration: none;
             color: #fff;
-            font-size: 1.2vw; /* Responsive text size */
+            font-size: 1.2vw;
             transition: color 0.3s;
         }
 
@@ -45,15 +44,59 @@
             color: #e63946;
         }
 
-        .menu-icon, .cart-icon {
+        .menu-icon, .cart-icon , .profile-icon{
             color: #fff;
-            font-size: 2vw; /* Responsive icon size */
+            font-size: 2vw;
             cursor: pointer;
         }
 
-        .menu-icon:hover, .cart-icon:hover {
+        .menu-icon:hover, .cart-icon:hover, .profile-icon:hover {
             color: #e63946;
         }
+
+        /* Styling the search bar */
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            font-size: 1.2vw;
+            border: 1px solid white; /* White border for the classy effect */
+            border-radius: 3px;
+            background-color: black;  /* Matches the navbar */
+            color: white;  /* White text for contrast */
+            transition: border-color 0.3s;
+        }
+
+        .search-bar input[type="text"]::placeholder {
+            color: white; /* White placeholder text */
+            font-family: "Cinzel" , serif;
+        }
+
+        .search-bar input[type="text"]:focus {
+            outline: none;  /* Remove default focus outline */
+            border-color: #e63946;  /* Red border on focus */
+        }
+
+        .search-bar button {
+            background-color: #e63946;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 3px;
+            margin-left: 5px;
+            font-size: 1.2vw;
+            transition: background-color 0.3s;
+        }
+
+        .search-bar button:hover {
+            background-color: #fff;
+            color: #e63946;
+        }
+
 
         .container {
             display: flex;
@@ -64,7 +107,6 @@
             text-align: center;
         }
 
-        /* Responsive text size using vw (viewport width) */
         .F {
             font-family: "La Belle Aurore", cursive;
             font-weight: 400;
@@ -86,7 +128,6 @@
             margin-top: -2vw;
         }
 
-        /* Decorative elements with percentage-based positioning for responsiveness */
         .decorative-left {
             position: absolute;
             top: 50%;
@@ -105,13 +146,12 @@
             opacity: 0.5;
         }
 
-        /* Media Queries for smaller devices */
         @media (max-width: 768px) {
             .navbar a {
-                font-size: 4vw; /* Adjusted for smaller screens */
+                font-size: 4vw;
             }
 
-            .menu-icon, .cart-icon {
+            .menu-icon, .cart-icon , .profile-icon{
                 font-size: 5vw;
             }
 
@@ -129,6 +169,15 @@
 
             .navbar {
                 padding: 10px;
+            }
+
+            /* Responsive search bar */
+            .search-bar input[type="text"] {
+                font-size: 4vw;
+            }
+
+            .search-bar button {
+                font-size: 4vw;
             }
         }
 
@@ -149,8 +198,17 @@
                 font-size: 6vw;
             }
 
-            .menu-icon, .cart-icon {
+            .menu-icon, .cart-icon,.profile-icon {
                 font-size: 8vw;
+            }
+
+            /* Search bar adjustment for small screens */
+            .search-bar input[type="text"] {
+                font-size: 6vw;
+            }
+
+            .search-bar button {
+                font-size: 6vw;
             }
         }
     </style>
@@ -163,10 +221,27 @@
         <a href="home.html">About</a>
         <a href="menu.html">Services</a>
         <a href="#contact">Contact Us</a>
+        
+        <!-- Search Bar -->
+        <form class="search-bar" action="#" method="GET">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+          <div class="profile-icon"><i class="fas fa-user-circle"></i></div>
         <div class="cart-icon"><i class="fas fa-shopping-cart"></i></div>
     </nav>
 
-    
+    <!-- Defining clickable areas -->
+    <map name="categoriesMap">
+        <area shape="circle" coords="200,200,150" href="fragrance.html" alt="Fragrance">
+        <area shape="circle" coords="600,200,150" href="lotions.html" alt="Lotions">
+        <area shape="circle" coords="1000,200,150" href="handcream.html" alt="Hand Cream">
+        <area shape="circle" coords="1400,200,150" href="travelsize.html" alt="Travel Size">
+        <area shape="circle" coords="200,600,150" href="moisturizer.html" alt="Moisturizer">
+        <area shape="circle" coords="600,600,150" href="perfume.html" alt="Perfume">
+        <area shape="circle" coords="1000,600,150" href="fragrancecandles.html" alt="Fragrance Candles">
+        <area shape="circle" coords="1400,600,150" href="bathingessentials.html" alt="Bathing Essentials">
+    </map>
 
 </body>
 </html>

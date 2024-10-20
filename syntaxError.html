@@ -17,13 +17,22 @@
             margin: 0;
             font-family: 'Arial', sans-serif;
             background-image: url('C:/Users/devme/Downloads/F..jpg');
-            background-size: cover;  /* Ensures the image covers the entire background */
-            background-position: center;  /* Centers the background image */
-            background-repeat: no-repeat;  /* Prevents the image from repeating */
+            background-size: cover;  
+            background-position: center;  
+            background-repeat: no-repeat;  
             background-attachment: fixed; 
         }
 
-        /* Navbar styles */
+
+        footer {
+            background-color: black; 
+            color: white;
+            text-align: center;
+            padding: 5px 10px;  
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -37,7 +46,7 @@
             margin: 0 15px;
             text-decoration: none;
             color: #fff;
-            font-size: 1.2vw; /* Responsive text size */
+            font-size: 1.2vw;
             transition: color 0.3s;
         }
 
@@ -45,13 +54,56 @@
             color: #e63946;
         }
 
-        .menu-icon, .cart-icon {
+        .menu-icon, .cart-icon, .profile-icon {
             color: #fff;
-            font-size: 2vw; /* Responsive icon size */
+            font-size: 2vw;
             cursor: pointer;
         }
 
-        .menu-icon:hover, .cart-icon:hover {
+        .menu-icon:hover, .cart-icon:hover, .profile-icon:hover {
+            color: #e63946;
+        }
+
+        /* Search bar styles */
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            font-size: 1.2vw;
+            border: 1px solid white; /* White border for the classy effect */
+            border-radius: 3px;
+            background-color: black;  /* Matches the navbar */
+            color: white;  /* White text for contrast */
+            transition: border-color 0.3s;
+        }
+
+        .search-bar input[type="text"]::placeholder {
+            color: white; /* White placeholder text */
+            font-family: "Cinzel" , serif;
+        }
+
+        .search-bar input[type="text"]:focus {
+            outline: none;  /* Remove default focus outline */
+            border-color: #e63946;  /* Red border on focus */
+        }
+
+        .search-bar button {
+            background-color: #e63946;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 3px;
+            margin-left: 5px;
+            font-size: 1.2vw;
+            transition: background-color 0.3s;
+        }
+
+        .search-bar button:hover {
+            background-color: #fff;
             color: #e63946;
         }
 
@@ -86,32 +138,13 @@
             margin-top: -2vw;
         }
 
-        /* Decorative elements with percentage-based positioning for responsiveness */
-        .decorative-left {
-            position: absolute;
-            top: 50%;
-            left: 10%;
-            transform: translateY(-50%);
-            height: 200px;
-            opacity: 0.5;
-        }
-
-        .decorative-right {
-            position: absolute;
-            top: 50%;
-            right: 10%;
-            transform: translateY(-50%);
-            height: 200px;
-            opacity: 0.5;
-        }
-
         /* Media Queries for smaller devices */
         @media (max-width: 768px) {
             .navbar a {
-                font-size: 4vw; /* Adjusted for smaller screens */
+                font-size: 4vw;
             }
 
-            .menu-icon, .cart-icon {
+            .menu-icon, .cart-icon, .profile-icon {
                 font-size: 5vw;
             }
 
@@ -129,6 +162,15 @@
 
             .navbar {
                 padding: 10px;
+            }
+
+            /* Responsive search bar */
+            .search-bar input[type="text"] {
+                font-size: 4vw;
+            }
+
+            .search-bar button {
+                font-size: 4vw;
             }
         }
 
@@ -149,8 +191,17 @@
                 font-size: 6vw;
             }
 
-            .menu-icon, .cart-icon {
+            .menu-icon, .cart-icon, .profile-icon {
                 font-size: 8vw;
+            }
+
+            /* Search bar adjustment for small screens */
+            .search-bar input[type="text"] {
+                font-size: 6vw;
+            }
+
+            .search-bar button {
+                font-size: 6vw;
             }
         }
     </style>
@@ -163,6 +214,16 @@
         <a href="home.html">About</a>
         <a href="menu.html">Services</a>
         <a href="#contact">Contact Us</a>
+        
+        <!-- Search Bar -->
+        <form class="search-bar" action="#" method="GET">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        
+        <a href="profile.html">
+            <div class="profile-icon"><i class="fas fa-user-circle"></i></div>
+        </a>
         <div class="cart-icon"><i class="fas fa-shopping-cart"></i></div>
     </nav>
 
@@ -170,6 +231,8 @@
         <!-- <h1><span class="F">F</span><span>lorist</span></h1> -->
         <!-- <p class="caption">Blossom & Bloom</p> <!-- Caption class for styling --> 
     </div>
-
+    <footer>
+        <p>&copy; 2024 Florist. All rights reserved.</p>
+    </footer>
 </body>
 </html>
